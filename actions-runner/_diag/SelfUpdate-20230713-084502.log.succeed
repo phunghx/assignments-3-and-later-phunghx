@@ -1,0 +1,17 @@
+[2023-07-13 15:45:02-2088] --------whoami--------
+phunghx2
+[2023-07-13 15:45:02-2112] --------whoami--------
+[2023-07-13 15:45:02-2117] Waiting for Runner.Listener (61179) to complete
+[2023-07-13 15:45:02-2122] Process 61179 still running
+[2023-07-13 15:45:04-0007] Process 61179 finished running
+[2023-07-13 15:45:04-0012] Sleep 1 more second to make sure process exited
+[2023-07-13 15:45:05-0007] move /home/phunghx2/linux-course/course1/actions-runner/bin /home/phunghx2/linux-course/course1/actions-runner/bin.2.305.0
+renamed '/home/phunghx2/linux-course/course1/actions-runner/bin' -> '/home/phunghx2/linux-course/course1/actions-runner/bin.2.305.0'
+[2023-07-13 15:45:05-0043] move /home/phunghx2/linux-course/course1/actions-runner/externals /home/phunghx2/linux-course/course1/actions-runner/externals.2.305.0
+renamed '/home/phunghx2/linux-course/course1/actions-runner/externals' -> '/home/phunghx2/linux-course/course1/actions-runner/externals.2.305.0'
+[2023-07-13 15:45:05-0057] Create junction bin folder
+[2023-07-13 15:45:05-0075] Create junction externals folder
+[2023-07-13 15:45:05-0109] Update succeed
+[2023-07-13 15:45:05-0121] update.finished file creation succeed
+[2023-07-13 15:45:05-0126] Rename /home/phunghx2/linux-course/course1/actions-runner/_diag/SelfUpdate-20230713-084502.log to be /home/phunghx2/linux-course/course1/actions-runner/_diag/SelfUpdate-20230713-084502.log.succeed
+renamed '/home/phunghx2/linux-course/course1/actions-runner/_diag/SelfUpdate-20230713-084502.log' -> '/home/phunghx2/linux-course/course1/actions-runner/_diag/SelfUpdate-20230713-084502.log.succeed'

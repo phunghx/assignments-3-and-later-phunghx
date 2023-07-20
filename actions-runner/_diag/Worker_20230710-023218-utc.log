@@ -1,0 +1,3193 @@
+[2023-07-10 02:32:18Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:18Z INFO HostContext] Well known config file 'Credentials': '/home/phunghx2/Week1_Ubuntu/actions-runner/.credentials'
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:18Z INFO HostContext] Well known config file 'Runner': '/home/phunghx2/Week1_Ubuntu/actions-runner/.runner'
+[2023-07-10 02:32:18Z INFO Worker] Version: 2.305.0
+[2023-07-10 02:32:18Z INFO Worker] Commit: 6cbe663c239dba8a109c6ac2801b25f1ed7c51e9
+[2023-07-10 02:32:18Z INFO Worker] Culture: en-US
+[2023-07-10 02:32:18Z INFO Worker] UI Culture: en-US
+[2023-07-10 02:32:18Z INFO Worker] Waiting to receive the job message from the channel.
+[2023-07-10 02:32:18Z INFO ProcessChannel] Receiving message of length 20915, with hash 'c146b17f00cd58165f76d97f33c9bb6c5d61853f002c0677b202fc53912bdeeb'
+[2023-07-10 02:32:18Z INFO Worker] Message received.
+[2023-07-10 02:32:18Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/github-actions.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "a878fecf-9250-57e2-84e0-aae0213d4ecb",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 14,
+        "col": 19,
+        "lit": "Checkout submodules"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 15,
+              "col": 19,
+              "lit": "git submodule update --init --recursive"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "145553fb-1baa-5bc7-b18e-5469e21587f7",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 16,
+        "col": 19,
+        "lit": "Run unit test"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 18,
+              "lit": "./unit-test.sh"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "8615dfaf-7ef8-510a-52bc-76337457853a",
+      "name": "__run_2"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": ""
+    },
+    "system.pipelineStartTime": {
+      "value": "2023-07-10 02:32:15+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "4"
+    },
+    "build.containerId": {
+      "value": "5432217"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/github-actions.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "unit-test"
+    },
+    "system.phaseId": {
+      "value": "f9b18aa4-1325-5d63-b757-65b914572d7c"
+    },
+    "system.phaseName": {
+      "value": "unit-test"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "unit-test.__default"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "unit-test"
+    },
+    "system.jobDisplayName": {
+      "value": "unit-test"
+    },
+    "system.jobId": {
+      "value": "0e10f8dd-85b5-5bee-19c6-47fc7db6f171"
+    },
+    "system.jobName": {
+      "value": "__default"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.orchestrationId": {
+      "value": "dbf427c4-5591-42a0-aabe-bb73fdee4b64.unit-test.__default"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 31,
+    "planId": "dbf427c4-5591-42a0-aabe-bb73fdee4b64",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/4",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "Week1_Ubuntu"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "phunghx"
+    }
+  },
+  "timeline": {
+    "id": "dbf427c4-5591-42a0-aabe-bb73fdee4b64",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "0e10f8dd-85b5-5bee-19c6-47fc7db6f171",
+  "jobDisplayName": "unit-test",
+  "jobName": "__default",
+  "jobContainer": {
+    "type": 0,
+    "file": 1,
+    "line": 10,
+    "col": 20,
+    "lit": "cuaesd/aesd-autotest:unit-test"
+  },
+  "requestId": 7,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "bb3b91d4-246b-463d-ada1-582cbb46d2da",
+          "ServerName": "KKJQSLy9D6hjh8pBSxRoNdoGKPa5fXyIl1k5hFmVe689ZTv9nx",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/KKJQSLy9D6hjh8pBSxRoNdoGKPa5fXyIl1k5hFmVe689ZTv9nx/",
+          "FeedStreamUrl": "https://pipelines.actions.githubusercontent.com/KKJQSLy9D6hjh8pBSxRoNdoGKPa5fXyIl1k5hFmVe689ZTv9nx/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/dbf427c4-5591-42a0-aabe-bb73fdee4b64/timelines/dbf427c4-5591-42a0-aabe-bb73fdee4b64/records/0e10f8dd-85b5-5bee-19c6-47fc7db6f171/feedstream?api-version=6.0-preview"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/KKJQSLy9D6hjh8pBSxRoNdoGKPa5fXyIl1k5hFmVe689ZTv9nx/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "553e026bcfd8cea7c507993a3a3d47356499fc2d"
+        },
+        {
+          "k": "repository",
+          "v": "phunghx/Week1_Ubuntu"
+        },
+        {
+          "k": "repository_owner",
+          "v": "phunghx"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "4760588"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/phunghx/Week1_Ubuntu.git"
+        },
+        {
+          "k": "run_id",
+          "v": "5503287944"
+        },
+        {
+          "k": "run_number",
+          "v": "4"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "repo-self-hosted-runners-disabled",
+          "v": false
+        },
+        {
+          "k": "repository_id",
+          "v": "664202904"
+        },
+        {
+          "k": "actor_id",
+          "v": "4760588"
+        },
+        {
+          "k": "actor",
+          "v": "phunghx"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "phunghx"
+        },
+        {
+          "k": "workflow",
+          "v": "assignment-test"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "553e026bcfd8cea7c507993a3a3d47356499fc2d"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "3f1d5b8556a7fd6c96737bbedd3505f07e6ede8f"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "phunghx@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "phunghx2"
+                              },
+                              {
+                                "k": "username",
+                                "v": "phunghx"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "phunghx@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "phunghx2"
+                              },
+                              {
+                                "k": "username",
+                                "v": "phunghx"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "553e026bcfd8cea7c507993a3a3d47356499fc2d"
+                        },
+                        {
+                          "k": "message",
+                          "v": "add url"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2023-07-10T09:15:02+07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "48033b044f8d872b4275349d88654a2e625aa07e"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/phunghx/Week1_Ubuntu/commit/553e026bcfd8cea7c507993a3a3d47356499fc2d"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/phunghx/Week1_Ubuntu/compare/3f1d5b8556a7...553e026bcfd8"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "phunghx@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "phunghx2"
+                          },
+                          {
+                            "k": "username",
+                            "v": "phunghx"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "phunghx@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "phunghx2"
+                          },
+                          {
+                            "k": "username",
+                            "v": "phunghx"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "553e026bcfd8cea7c507993a3a3d47356499fc2d"
+                    },
+                    {
+                      "k": "message",
+                      "v": "add url"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2023-07-10T09:15:02+07:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "48033b044f8d872b4275349d88654a2e625aa07e"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/phunghx/Week1_Ubuntu/commit/553e026bcfd8cea7c507993a3a3d47356499fc2d"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "phunghx@gmail.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "phunghx"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/phunghx/Week1_Ubuntu.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1688890792.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "Ubuntu class"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "phunghx/Week1_Ubuntu"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/phunghx/Week1_Ubuntu.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/phunghx/Week1_Ubuntu"
+                    },
+                    {
+                      "k": "id",
+                      "v": 664202904.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "C"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "key",
+                            "v": "mit"
+                          },
+                          {
+                            "k": "name",
+                            "v": "MIT License"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDc6TGljZW5zZTEz"
+                          },
+                          {
+                            "k": "spdx_id",
+                            "v": "MIT"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/licenses/mit"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "Week1_Ubuntu"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOJ5bumA"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/4760588?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "phunghx@gmail.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/phunghx/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/phunghx/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/phunghx/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/phunghx/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/phunghx"
+                          },
+                          {
+                            "k": "id",
+                            "v": 4760588.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "phunghx"
+                          },
+                          {
+                            "k": "name",
+                            "v": "phunghx"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjQ3NjA1ODg="
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/phunghx/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/phunghx/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/phunghx/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/phunghx/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/phunghx/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/phunghx"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1688955321.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 122572.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:phunghx/Week1_Ubuntu.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/phunghx/Week1_Ubuntu"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/phunghx/Week1_Ubuntu/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2023-07-09T08:24:30Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/phunghx/Week1_Ubuntu"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/4760588?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/phunghx/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/phunghx/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/phunghx/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/phunghx/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/phunghx"
+                    },
+                    {
+                      "k": "id",
+                      "v": 4760588.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "phunghx"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjQ3NjA1ODg="
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/phunghx/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/phunghx/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/phunghx/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/phunghx/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/phunghx/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/phunghx"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "workflow_ref",
+          "v": "phunghx/Week1_Ubuntu/.github/workflows/github-actions.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "553e026bcfd8cea7c507993a3a3d47356499fc2d"
+        }
+      ]
+    },
+    "partialrerun": false,
+    "needs": {
+      "t": 2
+    },
+    "vars": null,
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    }
+  }
+}
+[2023-07-10 02:32:18Z INFO JobRunner] Job ID 0e10f8dd-85b5-5bee-19c6-47fc7db6f171
+[2023-07-10 02:32:18Z INFO JobRunner] Creating job server with URL: https://pipelines.actions.githubusercontent.com/KKJQSLy9D6hjh8pBSxRoNdoGKPa5fXyIl1k5hFmVe689ZTv9nx/
+[2023-07-10 02:32:18Z INFO ConfigurationStore] currentAssemblyLocation: /home/phunghx2/Week1_Ubuntu/actions-runner/bin/Runner.Worker.dll
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:18Z INFO ConfigurationStore] binPath: /home/phunghx2/Week1_Ubuntu/actions-runner/bin
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:18Z INFO ConfigurationStore] RootFolder: /home/phunghx2/Week1_Ubuntu/actions-runner
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:18Z INFO HostContext] Well known config file 'Runner': '/home/phunghx2/Week1_Ubuntu/actions-runner/.runner'
+[2023-07-10 02:32:18Z INFO ConfigurationStore] ConfigFilePath: /home/phunghx2/Week1_Ubuntu/actions-runner/.runner
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:18Z INFO HostContext] Well known config file 'Credentials': '/home/phunghx2/Week1_Ubuntu/actions-runner/.credentials'
+[2023-07-10 02:32:18Z INFO ConfigurationStore] CredFilePath: /home/phunghx2/Week1_Ubuntu/actions-runner/.credentials
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:18Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/phunghx2/Week1_Ubuntu/actions-runner/.credentials_migrated'
+[2023-07-10 02:32:18Z INFO ConfigurationStore] MigratedCredFilePath: /home/phunghx2/Week1_Ubuntu/actions-runner/.credentials_migrated
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:18Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:18Z INFO HostContext] Well known config file 'Service': '/home/phunghx2/Week1_Ubuntu/actions-runner/.service'
+[2023-07-10 02:32:18Z INFO ConfigurationStore] ServiceConfigFilePath: /home/phunghx2/Week1_Ubuntu/actions-runner/.service
+[2023-07-10 02:32:18Z INFO ConfigurationStore] Read setting file: 285 chars
+[2023-07-10 02:32:18Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-07-10 02:32:18Z INFO Worker] Listening for cancel message from the channel.
+[2023-07-10 02:32:18Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2023-07-10 02:32:20Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-07-10 02:32:20Z INFO JobServer] Creating websocket client ...wss://pipelines.actions.githubusercontent.com/KKJQSLy9D6hjh8pBSxRoNdoGKPa5fXyIl1k5hFmVe689ZTv9nx/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/dbf427c4-5591-42a0-aabe-bb73fdee4b64/timelines/dbf427c4-5591-42a0-aabe-bb73fdee4b64/records/0e10f8dd-85b5-5bee-19c6-47fc7db6f171/feedstream?api-version=6.0-preview
+[2023-07-10 02:32:20Z INFO JobServer] Attempting to start websocket client with delay 00:00:00.
+[2023-07-10 02:32:20Z INFO JobServerQueue] Start process web console line queue.
+[2023-07-10 02:32:20Z INFO JobServerQueue] Start process file upload queue.
+[2023-07-10 02:32:20Z INFO JobServerQueue] Start results file upload queue.
+[2023-07-10 02:32:20Z INFO JobServerQueue] Starting results-based upload queue...
+[2023-07-10 02:32:20Z INFO JobServerQueue] Start process timeline update queue.
+[2023-07-10 02:32:20Z INFO ExecutionContext] Initialize GitHub context
+[2023-07-10 02:32:20Z INFO ExecutionContext] Initialize Env context
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:20Z INFO JobRunner] Starting the job execution context.
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO JobRunner] Validating directory permissions for: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Tools': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_tool'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:20Z INFO JobRunner] Getting job extension.
+[2023-07-10 02:32:20Z INFO JobRunner] Initialize job. Getting all job steps.
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known config file 'Credentials': '/home/phunghx2/Week1_Ubuntu/actions-runner/.credentials'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known config file 'SetupInfo': '/home/phunghx2/Week1_Ubuntu/actions-runner/.setup_info'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO PipelineDirectoryManager] Loading tracking config if exists: /home/phunghx2/Week1_Ubuntu/actions-runner/_work/_PipelineMapping/phunghx/Week1_Ubuntu/PipelineFolder.json
+[2023-07-10 02:32:20Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO PipelineDirectoryManager] Creating pipeline directory.
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO PipelineDirectoryManager] Creating workspace directory.
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Tools': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_tool'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Externals': '/home/phunghx2/Week1_Ubuntu/actions-runner/externals'
+[2023-07-10 02:32:20Z INFO JobExtension] Downloading actions
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:20Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:20Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/ee0669bd1cc54295c223e0bb666b733df41de1c5' into /home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions/_temp_19e078bc-2431-4ecb-aec6-50c5e2ebc82c/ab40b09b-db42-408a-99be-b4f410da3703.tar.gz.
+[2023-07-10 02:32:21Z INFO JobServer] Successfully started websocket client.
+[2023-07-10 02:32:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '146bfe79-8e52-4ff9-8ba0-61e13bb551e2', success rate: 1/1.
+[2023-07-10 02:32:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '146bfe79-8e52-4ff9-8ba0-61e13bb551e2', success rate: 1/1.
+[2023-07-10 02:32:21Z INFO ActionManager] Which: 'tar'
+[2023-07-10 02:32:21Z INFO ActionManager] Location: '/usr/bin/tar'
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions/_temp_19e078bc-2431-4ecb-aec6-50c5e2ebc82c/ab40b09b-db42-408a-99be-b4f410da3703.tar.gz"'
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions/_temp_19e078bc-2431-4ecb-aec6-50c5e2ebc82c/_staging'
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24026.
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper] Process started with process id 24026, waiting for process exit.
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:21Z INFO ProcessInvokerWrapper] Finished process 24026 with exit code 0, and elapsed time 00:00:00.0145261.
+[2023-07-10 02:32:21Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2023-07-10 02:32:21Z INFO ActionManager] Finished getting action repository.
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:21Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:21Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-07-10 02:32:21Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:21Z INFO ActionManager] Load action that reference repository from '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions/actions/checkout/v2'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:21Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-07-10 02:32:21Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-07-10 02:32:21Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-07-10 02:32:21Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-07-10 02:32:21Z INFO DockerCommandManager] Which: 'docker'
+[2023-07-10 02:32:21Z INFO DockerCommandManager] Location: '/usr/bin/docker'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO JobExtension] Adding .
+[2023-07-10 02:32:21Z INFO JobExtension] Adding .
+[2023-07-10 02:32:21Z INFO JobExtension] Adding .
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:21Z INFO JobExtension] Total accessible running process: 277.
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:21Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:21Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "146bfe79-8e52-4ff9-8ba0-61e13bb551e2",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2023-07-10T02:32:20.2745468Z",
+  "finishTime": "2023-07-10T02:32:21.9879302Z"
+}.
+[2023-07-10 02:32:21Z INFO JobRunner] Total job steps: 4.
+[2023-07-10 02:32:21Z INFO JobRunner] Run all job steps.
+[2023-07-10 02:32:22Z INFO StepsRunner] Processing step: DisplayName='Initialize containers'
+[2023-07-10 02:32:22Z INFO StepsRunner] Evaluating: success()
+[2023-07-10 02:32:22Z INFO StepsRunner] Result: true
+[2023-07-10 02:32:22Z INFO StepsRunner] Starting the step.
+[2023-07-10 02:32:22Z INFO ExecutionContext] Reserve record order 6 to 10 for post job actions.
+[2023-07-10 02:32:22Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:22Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:22Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:22Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:22Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:22Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Arguments: 'version --format '{{.Server.APIVersion}}''
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24029.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Process started with process id 24029, waiting for process exit.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Finished process 24029 with exit code 0, and elapsed time 00:00:00.0153247.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Arguments: 'version --format '{{.Client.APIVersion}}''
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24046.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Process started with process id 24046, waiting for process exit.
+[2023-07-10 02:32:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '146bfe79-8e52-4ff9-8ba0-61e13bb551e2', success rate: 1/1.
+[2023-07-10 02:32:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6974b3e8-98b7-4a7c-9c21-c54ad597f696', success rate: 1/1.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Finished process 24046 with exit code 0, and elapsed time 00:00:00.0146071.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Arguments: 'ps --all --quiet --no-trunc --filter "label=b5cbc5"'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24062.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Process started with process id 24062, waiting for process exit.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Finished process 24062 with exit code 0, and elapsed time 00:00:00.0113890.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Arguments: 'network prune --force --filter "label=b5cbc5"'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24071.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Process started with process id 24071, waiting for process exit.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Finished process 24071 with exit code 0, and elapsed time 00:00:00.0117461.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Arguments: 'network create --label b5cbc5 github_network_38ce63539ef24e458f98d254afff6d84'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24081.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Process started with process id 24081, waiting for process exit.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Finished process 24081 with exit code 0, and elapsed time 00:00:00.0879327.
+[2023-07-10 02:32:22Z INFO ContainerOperationProvider] Container name: 9a899e49dc6b448cac0a28fe7e417d1d
+[2023-07-10 02:32:22Z INFO ContainerOperationProvider] Container image: cuaesd/aesd-autotest:unit-test
+[2023-07-10 02:32:22Z INFO ContainerOperationProvider] Container options: 
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Arguments: 'pull cuaesd/aesd-autotest:unit-test'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24201.
+[2023-07-10 02:32:22Z INFO ProcessInvokerWrapper] Process started with process id 24201, waiting for process exit.
+[2023-07-10 02:32:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6974b3e8-98b7-4a7c-9c21-c54ad597f696', success rate: 1/1.
+[2023-07-10 02:32:22Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] Finished process 24201 with exit code 0, and elapsed time 00:00:02.5718230.
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Externals': '/home/phunghx2/Week1_Ubuntu/actions-runner/externals'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Externals': '/home/phunghx2/Week1_Ubuntu/actions-runner/externals'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Tools': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_tool'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Tools': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_tool'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:24Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Arguments: 'create --name 9a899e49dc6b448cac0a28fe7e417d1d_cuaesdaesdautotestunittest_404df5 --label b5cbc5 --workdir /__w/Week1_Ubuntu/Week1_Ubuntu --network github_network_38ce63539ef24e458f98d254afff6d84  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/phunghx2/Week1_Ubuntu/actions-runner/_work":"/__w" -v "/home/phunghx2/Week1_Ubuntu/actions-runner/externals":"/__e":ro -v "/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp":"/__w/_temp" -v "/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions":"/__w/_actions" -v "/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_tool":"/__w/_tool" -v "/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp/_github_home":"/github/home" -v "/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" cuaesd/aesd-autotest:unit-test "-f" "/dev/null"'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24270.
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] Process started with process id 24270, waiting for process exit.
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] Finished process 24270 with exit code 0, and elapsed time 00:00:00.0465036.
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Arguments: 'start 62a01de11a5615c1775ca9b0d156742eb9b8ac251d3b673bd9973732c8147a18'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24280.
+[2023-07-10 02:32:24Z INFO ProcessInvokerWrapper] Process started with process id 24280, waiting for process exit.
+[2023-07-10 02:32:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6974b3e8-98b7-4a7c-9c21-c54ad597f696', success rate: 1/1.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Finished process 24280 with exit code 0, and elapsed time 00:00:00.2388430.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Arguments: 'ps --all --filter id=62a01de11a5615c1775ca9b0d156742eb9b8ac251d3b673bd9973732c8147a18 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24398.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Process started with process id 24398, waiting for process exit.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Finished process 24398 with exit code 0, and elapsed time 00:00:00.0123817.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Arguments: 'inspect --format "{{range .Config.Env}}{{println .}}{{end}}" 62a01de11a5615c1775ca9b0d156742eb9b8ac251d3b673bd9973732c8147a18'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24408.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Process started with process id 24408, waiting for process exit.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Finished process 24408 with exit code 0, and elapsed time 00:00:00.0121099.
+[2023-07-10 02:32:25Z INFO StepsRunner] Step result: 
+[2023-07-10 02:32:25Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "initialize_containers",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "6974b3e8-98b7-4a7c-9c21-c54ad597f696",
+  "stepContextName": "6974b3e898b74a7c9c21c54ad597f696",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 4,
+  "startTime": "2023-07-10T02:32:22.0043487Z",
+  "finishTime": "2023-07-10T02:32:25.0793666Z"
+}.
+[2023-07-10 02:32:25Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-07-10 02:32:25Z INFO StepsRunner] Current state: job state = ''
+[2023-07-10 02:32:25Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v2'
+[2023-07-10 02:32:25Z INFO StepsRunner] Evaluating: success()
+[2023-07-10 02:32:25Z INFO StepsRunner] Result: true
+[2023-07-10 02:32:25Z INFO StepsRunner] Starting the step.
+[2023-07-10 02:32:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6974b3e8-98b7-4a7c-9c21-c54ad597f696', success rate: 1/1.
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:25Z INFO ActionManager] Load action that reference repository from '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions/actions/checkout/v2'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-07-10 02:32:25Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-07-10 02:32:25Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-07-10 02:32:25Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:25Z INFO ExecutionContext] Write event payload to /home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp/_github_workflow/event.json
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:25Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "phunghx/Week1_Ubuntu"
+}
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2023-07-10 02:32:25Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2023-07-10 02:32:25Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command error
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command group
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-07-10 02:32:25Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Arguments: 'exec  62a01de11a5615c1775ca9b0d156742eb9b8ac251d3b673bd9973732c8147a18 sh -c "cat /etc/*release | grep ^ID"'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24418.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Process started with process id 24418, waiting for process exit.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Finished process 24418 with exit code 0, and elapsed time 00:00:00.0542941.
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Externals': '/home/phunghx2/Week1_Ubuntu/actions-runner/externals'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:25Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/Week1_Ubuntu/Week1_Ubuntu -e "INPUT_REPOSITORY" -e "INPUT_REF" -e "INPUT_TOKEN" -e "INPUT_SSH-KEY" -e "INPUT_SSH-KNOWN-HOSTS" -e "INPUT_SSH-STRICT" -e "INPUT_PERSIST-CREDENTIALS" -e "INPUT_PATH" -e "INPUT_CLEAN" -e "INPUT_FETCH-DEPTH" -e "INPUT_LFS" -e "INPUT_SUBMODULES" -e "INPUT_SET-SAFE-DIRECTORY" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" 62a01de11a5615c1775ca9b0d156742eb9b8ac251d3b673bd9973732c8147a18 /__e/node16/bin/node /__w/_actions/actions/checkout/v2/dist/index.js'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24446.
+[2023-07-10 02:32:25Z INFO ProcessInvokerWrapper] Process started with process id 24446, waiting for process exit.
+[2023-07-10 02:32:25Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2023-07-10 02:32:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:26Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2023-07-10 02:32:26Z INFO JobServerQueue] Try to append 3 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 3/3.
+[2023-07-10 02:32:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:31Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:31Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:31Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:41Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:41Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:41Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:46Z INFO JobServerQueue] Try to append 2 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 2/2.
+[2023-07-10 02:32:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] Finished process 24446 with exit code 0, and elapsed time 00:00:24.5168734.
+[2023-07-10 02:32:49Z INFO CreateStepSummaryCommand] Step Summary file (/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp/_runner_file_commands/step_summary_57ab1cb8-93da-4bfe-9bb9-ae65d0a515cd) is empty; skipping attachment upload
+[2023-07-10 02:32:49Z INFO StepsRunner] Step result: 
+[2023-07-10 02:32:49Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v2",
+  "type": "node16",
+  "stage": "Main",
+  "stepId": "a878fecf-9250-57e2-84e0-aae0213d4ecb",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 25,
+  "startTime": "2023-07-10T02:32:25.0799659Z",
+  "finishTime": "2023-07-10T02:32:49.7145956Z"
+}.
+[2023-07-10 02:32:49Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-07-10 02:32:49Z INFO StepsRunner] Current state: job state = ''
+[2023-07-10 02:32:49Z INFO StepsRunner] Processing step: DisplayName='Checkout submodules'
+[2023-07-10 02:32:49Z INFO StepsRunner] Evaluating: success()
+[2023-07-10 02:32:49Z INFO StepsRunner] Result: true
+[2023-07-10 02:32:49Z INFO StepsRunner] Starting the step.
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:49Z INFO ExecutionContext] Write event payload to /home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp/_github_workflow/event.json
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:49Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-07-10 02:32:49Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command error
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command group
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:49Z INFO ScriptHandler] Which: 'bash'
+[2023-07-10 02:32:49Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/Week1_Ubuntu/Week1_Ubuntu -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" 62a01de11a5615c1775ca9b0d156742eb9b8ac251d3b673bd9973732c8147a18 sh -e /__w/_temp/ef243298-9e3c-4edc-9cc6-276849dce44f.sh'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24586.
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] Process started with process id 24586, waiting for process exit.
+[2023-07-10 02:32:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2023-07-10 02:32:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '145553fb-1baa-5bc7-b18e-5469e21587f7', success rate: 1/1.
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] Finished process 24586 with exit code 0, and elapsed time 00:00:00.0846809.
+[2023-07-10 02:32:49Z INFO CreateStepSummaryCommand] Step Summary file (/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp/_runner_file_commands/step_summary_6ceebffd-8f81-4659-b700-c6954f94ef48) is empty; skipping attachment upload
+[2023-07-10 02:32:49Z INFO StepsRunner] Step result: 
+[2023-07-10 02:32:49Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "sh",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "145553fb-1baa-5bc7-b18e-5469e21587f7",
+  "stepContextName": "__run",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2023-07-10T02:32:49.7149664Z",
+  "finishTime": "2023-07-10T02:32:49.8165252Z"
+}.
+[2023-07-10 02:32:49Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-07-10 02:32:49Z INFO StepsRunner] Current state: job state = ''
+[2023-07-10 02:32:49Z INFO StepsRunner] Processing step: DisplayName='Run unit test'
+[2023-07-10 02:32:49Z INFO StepsRunner] Evaluating: success()
+[2023-07-10 02:32:49Z INFO StepsRunner] Result: true
+[2023-07-10 02:32:49Z INFO StepsRunner] Starting the step.
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:49Z INFO ExecutionContext] Write event payload to /home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp/_github_workflow/event.json
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:49Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-07-10 02:32:49Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command error
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command group
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-07-10 02:32:49Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:49Z INFO ScriptHandler] Which: 'bash'
+[2023-07-10 02:32:49Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:49Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/Week1_Ubuntu/Week1_Ubuntu -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" 62a01de11a5615c1775ca9b0d156742eb9b8ac251d3b673bd9973732c8147a18 sh -e /__w/_temp/edb43785-5e41-4620-b71e-5203fbea7bc8.sh'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24643.
+[2023-07-10 02:32:49Z INFO ProcessInvokerWrapper] Process started with process id 24643, waiting for process exit.
+[2023-07-10 02:32:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-07-10 02:32:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-07-10 02:32:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-07-10 02:32:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] Finished process 24643 with exit code 0, and elapsed time 00:00:01.0215299.
+[2023-07-10 02:32:50Z INFO CreateStepSummaryCommand] Step Summary file (/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp/_runner_file_commands/step_summary_f8baa9d3-0a93-49ef-a597-b55e307626c4) is empty; skipping attachment upload
+[2023-07-10 02:32:50Z INFO StepsRunner] Step result: 
+[2023-07-10 02:32:50Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "sh",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "8615dfaf-7ef8-510a-52bc-76337457853a",
+  "stepContextName": "__run_2",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2023-07-10T02:32:49.8168221Z",
+  "finishTime": "2023-07-10T02:32:50.8882018Z"
+}.
+[2023-07-10 02:32:50Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-07-10 02:32:50Z INFO StepsRunner] Current state: job state = ''
+[2023-07-10 02:32:50Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v2'
+[2023-07-10 02:32:50Z INFO StepsRunner] Evaluating: always()
+[2023-07-10 02:32:50Z INFO StepsRunner] Result: true
+[2023-07-10 02:32:50Z INFO StepsRunner] Starting the step.
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:50Z INFO ActionManager] Load action that reference repository from '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions/actions/checkout/v2'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Actions': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_actions'
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-07-10 02:32:50Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-07-10 02:32:50Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-07-10 02:32:50Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:50Z INFO ExecutionContext] Write event payload to /home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp/_github_workflow/event.json
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Temp': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp'
+[2023-07-10 02:32:50Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "phunghx/Week1_Ubuntu"
+}
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2023-07-10 02:32:50Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2023-07-10 02:32:50Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command error
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command group
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-07-10 02:32:50Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Arguments: 'exec  62a01de11a5615c1775ca9b0d156742eb9b8ac251d3b673bd9973732c8147a18 sh -c "cat /etc/*release | grep ^ID"'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24860.
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] Process started with process id 24860, waiting for process exit.
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] Finished process 24860 with exit code 0, and elapsed time 00:00:00.0715286.
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Externals': '/home/phunghx2/Week1_Ubuntu/actions-runner/externals'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:50Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/Week1_Ubuntu/Week1_Ubuntu -e "STATE_isPost" -e "STATE_setSafeDirectory" -e "STATE_repositoryPath" -e "INPUT_REPOSITORY" -e "INPUT_REF" -e "INPUT_TOKEN" -e "INPUT_SSH-KEY" -e "INPUT_SSH-KNOWN-HOSTS" -e "INPUT_SSH-STRICT" -e "INPUT_PERSIST-CREDENTIALS" -e "INPUT_PATH" -e "INPUT_CLEAN" -e "INPUT_FETCH-DEPTH" -e "INPUT_LFS" -e "INPUT_SUBMODULES" -e "INPUT_SET-SAFE-DIRECTORY" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" 62a01de11a5615c1775ca9b0d156742eb9b8ac251d3b673bd9973732c8147a18 /__e/node16/bin/node /__w/_actions/actions/checkout/v2/dist/index.js'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24886.
+[2023-07-10 02:32:50Z INFO ProcessInvokerWrapper] Process started with process id 24886, waiting for process exit.
+[2023-07-10 02:32:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2023-07-10 02:32:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3edd3b65-9248-4a3d-a408-09ec8a01be38', success rate: 1/1.
+[2023-07-10 02:32:51Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper] Finished process 24886 with exit code 0, and elapsed time 00:00:00.1912897.
+[2023-07-10 02:32:51Z INFO CreateStepSummaryCommand] Step Summary file (/home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp/_runner_file_commands/step_summary_f83b85f9-e50d-4352-b404-a2c2e0f4cfd5) is empty; skipping attachment upload
+[2023-07-10 02:32:51Z INFO StepsRunner] Step result: 
+[2023-07-10 02:32:51Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v2",
+  "type": "node16",
+  "stage": "Post",
+  "stepId": "3edd3b65-9248-4a3d-a408-09ec8a01be38",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2023-07-10T02:32:50.888467Z",
+  "finishTime": "2023-07-10T02:32:51.1553307Z"
+}.
+[2023-07-10 02:32:51Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-07-10 02:32:51Z INFO StepsRunner] Current state: job state = ''
+[2023-07-10 02:32:51Z INFO StepsRunner] Processing step: DisplayName='Stop containers'
+[2023-07-10 02:32:51Z INFO StepsRunner] Evaluating: always()
+[2023-07-10 02:32:51Z INFO StepsRunner] Result: true
+[2023-07-10 02:32:51Z INFO StepsRunner] Starting the step.
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper]   Arguments: 'rm --force 62a01de11a5615c1775ca9b0d156742eb9b8ac251d3b673bd9973732c8147a18'
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 24982.
+[2023-07-10 02:32:51Z INFO ProcessInvokerWrapper] Process started with process id 24982, waiting for process exit.
+[2023-07-10 02:32:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3edd3b65-9248-4a3d-a408-09ec8a01be38', success rate: 1/1.
+[2023-07-10 02:32:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ec3b0f04-259d-4abd-a5e6-1cd60f09013c', success rate: 1/1.
+[2023-07-10 02:32:51Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2023-07-10 02:32:51Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:52Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:52Z INFO HostContext] Well known directory 'Work': '/home/phunghx2/Week1_Ubuntu/actions-runner/_work'
+[2023-07-10 02:32:53Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper] Finished process 24982 with exit code 0, and elapsed time 00:00:04.5272929.
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper]   Arguments: 'network rm github_network_38ce63539ef24e458f98d254afff6d84'
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/Week1_Ubuntu/actions-runner/_work/Week1_Ubuntu/Week1_Ubuntu'
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 25034.
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper] Process started with process id 25034, waiting for process exit.
+[2023-07-10 02:32:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ec3b0f04-259d-4abd-a5e6-1cd60f09013c', success rate: 1/1.
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-10 02:32:55Z INFO ProcessInvokerWrapper] Finished process 25034 with exit code 0, and elapsed time 00:00:00.2792022.
+[2023-07-10 02:32:55Z INFO StepsRunner] Step result: 
+[2023-07-10 02:32:55Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-07-10 02:32:55Z INFO StepsRunner] Current state: job state = ''
+[2023-07-10 02:32:55Z INFO JobRunner] Finalize job.
+[2023-07-10 02:32:55Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:55Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:55Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:55Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:55Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:55Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:55Z INFO JobExtension] Initialize Env context
+[2023-07-10 02:32:55Z INFO JobExtension] Initialize steps context
+[2023-07-10 02:32:56Z INFO JobExtension] Total accessible running process: 288.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 18 (kworker/0:1-events)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/18/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/18/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 5802 (kworker/4:0-events)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/5802/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/5802/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 9750 (kworker/u12:2-flush-8:0)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/9750/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/9750/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 22037 (kworker/5:2-cgroup_destroy)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/22037/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/22037/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 22175 (kworker/2:1-events)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/22175/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/22175/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 22176 (kworker/1:0-events)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/22176/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/22176/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 22200 (kworker/3:1-events)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/22200/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/22200/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 23559 (kworker/u12:3-writeback)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/23559/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/23559/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 23752 (kworker/u12:0-writeback)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/23752/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/23752/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 23973 (kworker/1:2-rcu_gp)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/23973/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/23973/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 24124 (kworker/0:0-events)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/24124/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/24124/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 24292 (kworker/2:0)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/24292/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/24292/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 24572 (kworker/5:0)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/24572/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/24572/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 24998 (kworker/3:2-events)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/24998/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/24998/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 25027 (kworker/u12:5-ext4-rsv-conversion)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/25027/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/25027/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 25028 (kworker/u12:6-ext4-rsv-conversion)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/25028/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/25028/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 25029 (kworker/u12:7)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/25029/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/25029/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 25045 (systemd-udevd)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/25045/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/25045/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 25046 (systemd-udevd)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/25046/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/25046/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 25050 (kworker/4:2-events)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/25050/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/25050/environ' is denied.
+[2023-07-10 02:32:56Z INFO JobExtension] Inspecting process environment variables. PID: 25053 (nm-dispatcher)
+[2023-07-10 02:32:56Z INFO LinuxProcessExtensions] Read env from /proc/25053/environ
+[2023-07-10 02:32:56Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/25053/environ' is denied.
+[2023-07-10 02:32:56Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "b8772de4-1aea-48ae-b26e-10c3263fb00c",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2023-07-10T02:32:55.9772305Z",
+  "finishTime": "2023-07-10T02:32:56.0227352Z"
+}.
+[2023-07-10 02:32:56Z INFO JobRunner] Job result after all job steps finish: Succeeded
+[2023-07-10 02:32:56Z INFO JobRunner] Completing the job execution context.
+[2023-07-10 02:32:56Z INFO JobRunner] Shutting down the job server queue.
+[2023-07-10 02:32:56Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2023-07-10 02:32:56Z INFO JobServerQueue] All queue process task stopped.
+[2023-07-10 02:32:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ec3b0f04-259d-4abd-a5e6-1cd60f09013c', success rate: 1/1.
+[2023-07-10 02:32:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'b8772de4-1aea-48ae-b26e-10c3263fb00c', success rate: 1/1.
+[2023-07-10 02:32:56Z INFO JobServerQueue] Web console line queue drained.
+[2023-07-10 02:32:56Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2023-07-10 02:32:58Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2023-07-10 02:32:58Z INFO JobServerQueue] File upload queue drained.
+[2023-07-10 02:32:58Z INFO JobServerQueue] Starting results-based upload queue...
+[2023-07-10 02:32:58Z INFO JobServerQueue] Results upload queue drained.
+[2023-07-10 02:32:58Z INFO JobServerQueue] Timeline update queue drained.
+[2023-07-10 02:32:58Z INFO JobServerQueue] Disposing job server ...
+[2023-07-10 02:32:58Z INFO JobServerQueue] Disposing results server ...
+[2023-07-10 02:32:58Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2023-07-10 02:32:58Z INFO TempDirectoryManager] Cleaning runner temp folder: /home/phunghx2/Week1_Ubuntu/actions-runner/_work/_temp
+[2023-07-10 02:32:58Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/Week1_Ubuntu/actions-runner/bin'
+[2023-07-10 02:32:58Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/Week1_Ubuntu/actions-runner'
+[2023-07-10 02:32:58Z INFO HostContext] Well known directory 'Diag': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag'
+[2023-07-10 02:32:58Z INFO HostContext] Well known config file 'Telemetry': '/home/phunghx2/Week1_Ubuntu/actions-runner/_diag/.telemetry'
+[2023-07-10 02:32:58Z INFO JobRunner] Raising job completed event
+[2023-07-10 02:32:58Z INFO Worker] Job completed.

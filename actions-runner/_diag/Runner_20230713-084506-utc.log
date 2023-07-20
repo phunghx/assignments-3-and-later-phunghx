@@ -1,0 +1,198 @@
+[2023-07-13 08:45:06Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:45:06Z INFO HostContext] Well known config file 'Credentials': '/home/phunghx2/linux-course/course1/actions-runner/.credentials'
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:45:06Z INFO HostContext] Well known config file 'Runner': '/home/phunghx2/linux-course/course1/actions-runner/.runner'
+[2023-07-13 08:45:06Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2023-07-13 08:45:06Z INFO Listener] RuntimeInformation: Linux 5.19.0-46-generic #47~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jun 21 15:35:31 UTC 2.
+[2023-07-13 08:45:06Z INFO Listener] Version: 2.306.0
+[2023-07-13 08:45:06Z INFO Listener] Commit: da6dfe9110e494c9c0f375d9d0e1deff824b1e50
+[2023-07-13 08:45:06Z INFO Listener] Culture: en-US
+[2023-07-13 08:45:06Z INFO Listener] UI Culture: en-US
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:45:06Z INFO Listener] Validating directory permissions for: '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:45:06Z INFO CommandLineParser] Parse
+[2023-07-13 08:45:06Z INFO CommandLineParser] Parsing 1 args
+[2023-07-13 08:45:06Z INFO CommandLineParser] parsing argument
+[2023-07-13 08:45:06Z INFO CommandLineParser] HasArgs: False
+[2023-07-13 08:45:06Z INFO CommandLineParser] Adding Command: run
+[2023-07-13 08:45:06Z INFO Listener] Arguments parsed
+[2023-07-13 08:45:06Z INFO Runner] ExecuteCommand
+[2023-07-13 08:45:06Z INFO ConfigurationStore] currentAssemblyLocation: /home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0/Runner.Listener.dll
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:06Z INFO ConfigurationStore] binPath: /home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:45:06Z INFO ConfigurationStore] RootFolder: /home/phunghx2/linux-course/course1/actions-runner
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:45:06Z INFO HostContext] Well known config file 'Runner': '/home/phunghx2/linux-course/course1/actions-runner/.runner'
+[2023-07-13 08:45:06Z INFO ConfigurationStore] ConfigFilePath: /home/phunghx2/linux-course/course1/actions-runner/.runner
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:45:06Z INFO HostContext] Well known config file 'Credentials': '/home/phunghx2/linux-course/course1/actions-runner/.credentials'
+[2023-07-13 08:45:06Z INFO ConfigurationStore] CredFilePath: /home/phunghx2/linux-course/course1/actions-runner/.credentials
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:45:06Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/phunghx2/linux-course/course1/actions-runner/.credentials_migrated'
+[2023-07-13 08:45:06Z INFO ConfigurationStore] MigratedCredFilePath: /home/phunghx2/linux-course/course1/actions-runner/.credentials_migrated
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:45:06Z INFO HostContext] Well known config file 'Service': '/home/phunghx2/linux-course/course1/actions-runner/.service'
+[2023-07-13 08:45:06Z INFO ConfigurationStore] ServiceConfigFilePath: /home/phunghx2/linux-course/course1/actions-runner/.service
+[2023-07-13 08:45:06Z INFO CommandSettings] Flag 'help': 'False'
+[2023-07-13 08:45:06Z INFO CommandSettings] Flag 'version': 'False'
+[2023-07-13 08:45:06Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-07-13 08:45:06Z INFO CommandSettings] Flag 'check': 'False'
+[2023-07-13 08:45:06Z INFO CommandSettings] Command 'configure': 'False'
+[2023-07-13 08:45:06Z INFO CommandSettings] Command 'remove': 'False'
+[2023-07-13 08:45:06Z INFO CommandSettings] Command 'warmup': 'False'
+[2023-07-13 08:45:06Z INFO ConfigurationManager] LoadSettings
+[2023-07-13 08:45:06Z INFO ConfigurationStore] IsConfigured()
+[2023-07-13 08:45:06Z INFO ConfigurationStore] IsConfigured: True
+[2023-07-13 08:45:06Z INFO ConfigurationManager] Is configured: True
+[2023-07-13 08:45:06Z INFO ConfigurationStore] Read setting file: 298 chars
+[2023-07-13 08:45:06Z INFO ConfigurationManager] Settings Loaded
+[2023-07-13 08:45:06Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-07-13 08:45:06Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-07-13 08:45:06Z INFO CommandSettings] Command 'run': 'True'
+[2023-07-13 08:45:06Z INFO ConfigurationStore] IsConfigured()
+[2023-07-13 08:45:06Z INFO ConfigurationStore] IsConfigured: True
+[2023-07-13 08:45:06Z INFO ConfigurationManager] Is configured: True
+[2023-07-13 08:45:06Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2023-07-13 08:45:06Z INFO Runner] Set runner startup type - Manual
+[2023-07-13 08:45:06Z INFO CommandSettings] Flag 'once': 'False'
+[2023-07-13 08:45:06Z INFO CommandSettings] Flag 'once': 'False'
+[2023-07-13 08:45:06Z INFO Runner] RunAsync
+[2023-07-13 08:45:06Z INFO ConfigurationManager] LoadSettings
+[2023-07-13 08:45:06Z INFO ConfigurationStore] IsConfigured()
+[2023-07-13 08:45:06Z INFO ConfigurationStore] IsConfigured: True
+[2023-07-13 08:45:06Z INFO ConfigurationManager] Is configured: True
+[2023-07-13 08:45:06Z INFO ConfigurationManager] Settings Loaded
+[2023-07-13 08:45:06Z INFO MessageListener] {
+  "AgentId": 22,
+  "AgentName": "phunghx",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/y2bwibnCjLRxnBgPefa7Of4qWal47baBz3CrIxF5ce99LASgke",
+  "GitHubUrl": "https://github.com/cu-ecen-aeld/assignment-2-phunghx",
+  "WorkFolder": "_work"
+}
+[2023-07-13 08:45:06Z INFO MessageListener] Loading Credentials
+[2023-07-13 08:45:06Z INFO ConfigurationStore] HasCredentials()
+[2023-07-13 08:45:06Z INFO ConfigurationStore] stored True
+[2023-07-13 08:45:06Z INFO CredentialManager] GetCredentialProvider
+[2023-07-13 08:45:06Z INFO CredentialManager] Creating type OAuth
+[2023-07-13 08:45:06Z INFO CredentialManager] Creating credential type: OAuth
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:06Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:45:06Z INFO HostContext] Well known config file 'RSACredentials': '/home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams'
+[2023-07-13 08:45:06Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams
+[2023-07-13 08:45:06Z INFO MessageListener] Attempt to create session.
+[2023-07-13 08:45:06Z INFO MessageListener] Connecting to the Runner Server...
+[2023-07-13 08:45:06Z INFO RunnerServer] EstablishVssConnection
+[2023-07-13 08:45:06Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-07-13 08:45:06Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-07-13 08:45:06Z INFO RunnerServer] EstablishVssConnection
+[2023-07-13 08:45:06Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-07-13 08:45:06Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-07-13 08:45:06Z INFO RunnerServer] EstablishVssConnection
+[2023-07-13 08:45:06Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-07-13 08:45:06Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-07-13 08:45:07Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-07-13 08:45:07Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-07-13 08:45:08Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-07-13 08:45:08Z INFO MessageListener] VssConnection created
+[2023-07-13 08:45:08Z INFO Terminal] WRITE LINE: 
+[2023-07-13 08:45:08Z INFO Terminal] WRITE LINE: 
+[2023-07-13 08:45:08Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams
+[2023-07-13 08:45:08Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams
+[2023-07-13 08:45:09Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-07-13 08:45:10Z INFO MessageListener] Session created.
+[2023-07-13 08:45:10Z INFO Terminal] WRITE LINE: Current runner version: '2.306.0'
+[2023-07-13 08:45:10Z INFO Terminal] WRITE LINE: 2023-07-13 08:45:10Z: Listening for Jobs
+[2023-07-13 08:45:10Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2023-07-13 08:45:11Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams
+[2023-07-13 08:45:11Z INFO MessageListener] Message '2' received from session 'a57701d1-3654-477c-987b-f4c4ca56df22'.
+[2023-07-13 08:45:11Z INFO Runner] Received job message of length 22931 from service, with hash 'bb1b6421bc9ae56d3ba48f57337068272ca15871e6e1332ef0d3d7db9d9603f3'
+[2023-07-13 08:45:11Z INFO JobDispatcher] Job request 3 for plan 9d159820-fb8d-4a4b-b01c-9af36e6d7d76 job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 received.
+[2023-07-13 08:45:11Z INFO JobDispatcher] Pull OrchestrationId 9d159820-fb8d-4a4b-b01c-9af36e6d7d76.unit-test.__default from JWT claims
+[2023-07-13 08:45:11Z INFO Terminal] WRITE LINE: 2023-07-13 08:45:11Z: Running job: unit-test
+[2023-07-13 08:45:11Z INFO JobDispatcher] Start renew job request 3 for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2023-07-13 08:45:11Z INFO JobDispatcher] Successfully renew job request 3, job is valid till 7/13/2023 8:55:11 AM
+[2023-07-13 08:45:11Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper]   File name: '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0/Runner.Worker'
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 107 110'
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-07-13 08:45:11Z INFO ProcessInvokerWrapper] Process started with process id 61508, waiting for process exit.
+[2023-07-13 08:45:11Z INFO JobDispatcher] Send job request message to worker for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2023-07-13 08:45:12Z INFO ProcessChannel] Sending message of length 22931, with hash 'bb1b6421bc9ae56d3ba48f57337068272ca15871e6e1332ef0d3d7db9d9603f3'
+[2023-07-13 08:45:12Z INFO JobNotification] Entering JobStarted Notification
+[2023-07-13 08:45:12Z INFO JobNotification] Entering StartMonitor
+[2023-07-13 08:45:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-13 08:45:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-13 08:45:35Z INFO ProcessInvokerWrapper] Finished process 61508 with exit code 100, and elapsed time 00:00:23.1887334.
+[2023-07-13 08:45:35Z INFO JobDispatcher] Worker finished for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171. Code: 100
+[2023-07-13 08:45:35Z INFO JobDispatcher] finish job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 with result: Succeeded
+[2023-07-13 08:45:35Z INFO Terminal] WRITE LINE: 2023-07-13 08:45:35Z: Job unit-test completed with result: Succeeded
+[2023-07-13 08:45:35Z INFO JobDispatcher] Stop renew job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2023-07-13 08:45:35Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 3.
+[2023-07-13 08:45:35Z INFO JobNotification] Entering JobCompleted Notification
+[2023-07-13 08:45:35Z INFO JobNotification] Entering EndMonitor
+[2023-07-13 08:45:37Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams
+[2023-07-13 08:45:37Z INFO MessageListener] Message '3' received from session 'a57701d1-3654-477c-987b-f4c4ca56df22'.
+[2023-07-13 08:45:37Z INFO Runner] Received job message of length 22933 from service, with hash 'c6f1df031f532291fe80bf8f749864030d3e9256a6f17ae8a37b62f073bea6d2'
+[2023-07-13 08:45:37Z INFO JobDispatcher] Job request 4 for plan 9d159820-fb8d-4a4b-b01c-9af36e6d7d76 job a047640a-23da-5e9b-1ef8-917a09b3753a received.
+[2023-07-13 08:45:37Z INFO JobDispatcher] Pull OrchestrationId 9d159820-fb8d-4a4b-b01c-9af36e6d7d76.full-test.__default from JWT claims
+[2023-07-13 08:45:37Z INFO JobDispatcher] Job request 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 processed succeed.
+[2023-07-13 08:45:37Z INFO Terminal] WRITE LINE: 2023-07-13 08:45:37Z: Running job: full-test
+[2023-07-13 08:45:37Z INFO JobDispatcher] Start renew job request 4 for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2023-07-13 08:45:37Z INFO JobDispatcher] Successfully renew job request 4, job is valid till 7/13/2023 8:55:37 AM
+[2023-07-13 08:45:37Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper]   File name: '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0/Runner.Worker'
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 107 110'
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/linux-course/course1/actions-runner/bin.2.306.0'
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-07-13 08:45:37Z INFO ProcessInvokerWrapper] Process started with process id 62728, waiting for process exit.
+[2023-07-13 08:45:37Z INFO JobDispatcher] Send job request message to worker for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2023-07-13 08:45:37Z INFO ProcessChannel] Sending message of length 22933, with hash 'c6f1df031f532291fe80bf8f749864030d3e9256a6f17ae8a37b62f073bea6d2'
+[2023-07-13 08:45:37Z INFO JobNotification] Entering JobStarted Notification
+[2023-07-13 08:45:37Z INFO JobNotification] Entering StartMonitor
+[2023-07-13 08:45:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-13 08:45:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-13 08:45:53Z INFO ProcessInvokerWrapper] Finished process 62728 with exit code 100, and elapsed time 00:00:15.7541532.
+[2023-07-13 08:45:53Z INFO JobDispatcher] Worker finished for job a047640a-23da-5e9b-1ef8-917a09b3753a. Code: 100
+[2023-07-13 08:45:53Z INFO JobDispatcher] finish job request for job a047640a-23da-5e9b-1ef8-917a09b3753a with result: Succeeded
+[2023-07-13 08:45:53Z INFO Terminal] WRITE LINE: 2023-07-13 08:45:53Z: Job full-test completed with result: Succeeded
+[2023-07-13 08:45:53Z INFO JobDispatcher] Stop renew job request for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2023-07-13 08:45:53Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 4.
+[2023-07-13 08:45:53Z INFO JobNotification] Entering JobCompleted Notification
+[2023-07-13 08:45:53Z INFO JobNotification] Entering EndMonitor
+[2023-07-13 08:52:27Z INFO Terminal] WRITE LINE: Exiting...
+[2023-07-13 08:52:27Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-07-13 08:52:27Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-07-13 08:52:27Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2023-07-13 08:52:27Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/y2bwibnCjLRxnBgPefa7Of4qWal47baBz3CrIxF5ce99LASgke/_apis/distributedtask/pools/1/messages?sessionId=a57701d1-3654-477c-987b-f4c4ca56df22&lastMessageId=3&status=Online&runnerVersion=2.306.0 has been cancelled.
+[2023-07-13 08:52:27Z INFO MessageListener] Get next message has been cancelled.
+[2023-07-13 08:52:27Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2023-07-13 08:52:27Z INFO JobDispatcher] Ensure WorkerDispather for job a047640a-23da-5e9b-1ef8-917a09b3753a run to finish, cancel any running job.
+[2023-07-13 08:52:27Z INFO JobDispatcher] Job request a047640a-23da-5e9b-1ef8-917a09b3753a processed succeed.
+[2023-07-13 08:52:28Z INFO Listener] Runner execution been cancelled.

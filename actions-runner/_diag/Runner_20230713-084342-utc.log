@@ -1,0 +1,222 @@
+[2023-07-13 08:43:42Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:42Z INFO HostContext] Well known config file 'Credentials': '/home/phunghx2/linux-course/course1/actions-runner/.credentials'
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:42Z INFO HostContext] Well known config file 'Runner': '/home/phunghx2/linux-course/course1/actions-runner/.runner'
+[2023-07-13 08:43:42Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2023-07-13 08:43:42Z INFO Listener] RuntimeInformation: Linux 5.19.0-46-generic #47~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jun 21 15:35:31 UTC 2.
+[2023-07-13 08:43:42Z INFO Listener] Version: 2.305.0
+[2023-07-13 08:43:42Z INFO Listener] Commit: 6cbe663c239dba8a109c6ac2801b25f1ed7c51e9
+[2023-07-13 08:43:42Z INFO Listener] Culture: en-US
+[2023-07-13 08:43:42Z INFO Listener] UI Culture: en-US
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:42Z INFO Listener] Validating directory permissions for: '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:42Z INFO CommandLineParser] Parse
+[2023-07-13 08:43:42Z INFO CommandLineParser] Parsing 5 args
+[2023-07-13 08:43:42Z INFO CommandLineParser] parsing argument
+[2023-07-13 08:43:42Z INFO CommandLineParser] HasArgs: False
+[2023-07-13 08:43:42Z INFO CommandLineParser] Adding Command: configure
+[2023-07-13 08:43:42Z INFO CommandLineParser] parsing argument
+[2023-07-13 08:43:42Z INFO CommandLineParser] HasArgs: True
+[2023-07-13 08:43:42Z INFO CommandLineParser] arg: url
+[2023-07-13 08:43:42Z INFO CommandLineParser] parsing argument
+[2023-07-13 08:43:42Z INFO CommandLineParser] HasArgs: True
+[2023-07-13 08:43:42Z INFO CommandLineParser] Adding option 'url': 'https://github.com/cu-ecen-aeld/assignment-2-phunghx'
+[2023-07-13 08:43:42Z INFO CommandLineParser] parsing argument
+[2023-07-13 08:43:42Z INFO CommandLineParser] HasArgs: True
+[2023-07-13 08:43:42Z INFO CommandLineParser] arg: token
+[2023-07-13 08:43:42Z INFO CommandLineParser] parsing argument
+[2023-07-13 08:43:42Z INFO CommandLineParser] HasArgs: True
+[2023-07-13 08:43:42Z INFO CommandLineParser] Adding option 'token': '***'
+[2023-07-13 08:43:42Z INFO Listener] Arguments parsed
+[2023-07-13 08:43:42Z INFO Runner] ExecuteCommand
+[2023-07-13 08:43:42Z INFO ConfigurationStore] currentAssemblyLocation: /home/phunghx2/linux-course/course1/actions-runner/bin/Runner.Listener.dll
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:43:42Z INFO ConfigurationStore] binPath: /home/phunghx2/linux-course/course1/actions-runner/bin
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:42Z INFO ConfigurationStore] RootFolder: /home/phunghx2/linux-course/course1/actions-runner
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:42Z INFO HostContext] Well known config file 'Runner': '/home/phunghx2/linux-course/course1/actions-runner/.runner'
+[2023-07-13 08:43:42Z INFO ConfigurationStore] ConfigFilePath: /home/phunghx2/linux-course/course1/actions-runner/.runner
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:42Z INFO HostContext] Well known config file 'Credentials': '/home/phunghx2/linux-course/course1/actions-runner/.credentials'
+[2023-07-13 08:43:42Z INFO ConfigurationStore] CredFilePath: /home/phunghx2/linux-course/course1/actions-runner/.credentials
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:42Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/phunghx2/linux-course/course1/actions-runner/.credentials_migrated'
+[2023-07-13 08:43:42Z INFO ConfigurationStore] MigratedCredFilePath: /home/phunghx2/linux-course/course1/actions-runner/.credentials_migrated
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:43:42Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:42Z INFO HostContext] Well known config file 'Service': '/home/phunghx2/linux-course/course1/actions-runner/.service'
+[2023-07-13 08:43:42Z INFO ConfigurationStore] ServiceConfigFilePath: /home/phunghx2/linux-course/course1/actions-runner/.service
+[2023-07-13 08:43:42Z INFO CommandSettings] Flag 'help': 'False'
+[2023-07-13 08:43:42Z INFO CommandSettings] Flag 'version': 'False'
+[2023-07-13 08:43:42Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-07-13 08:43:42Z INFO CommandSettings] Flag 'check': 'False'
+[2023-07-13 08:43:42Z INFO CommandSettings] Command 'configure': 'True'
+[2023-07-13 08:43:42Z INFO Terminal] WRITE LINE: 
+[2023-07-13 08:43:42Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2023-07-13 08:43:42Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2023-07-13 08:43:42Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2023-07-13 08:43:42Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2023-07-13 08:43:42Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2023-07-13 08:43:42Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2023-07-13 08:43:42Z INFO Terminal] WRITE LINE: |                                                                              |
+[2023-07-13 08:43:42Z INFO Terminal] WRITE: |                       
+[2023-07-13 08:43:42Z INFO Terminal] WRITE: Self-hosted runner registration
+[2023-07-13 08:43:42Z INFO Terminal] WRITE LINE:                         |
+[2023-07-13 08:43:42Z INFO Terminal] WRITE LINE: |                                                                              |
+[2023-07-13 08:43:42Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2023-07-13 08:43:42Z INFO ConfigurationManager] ConfigureAsync
+[2023-07-13 08:43:42Z INFO CommandSettings] Flag 'generateServiceConfig': 'False'
+[2023-07-13 08:43:42Z INFO ConfigurationStore] IsConfigured()
+[2023-07-13 08:43:42Z INFO ConfigurationStore] IsConfigured: False
+[2023-07-13 08:43:42Z INFO ConfigurationManager] Is configured: False
+[2023-07-13 08:43:42Z INFO CommandSettings] Arg 'url': 'https://github.com/cu-ecen-aeld/assignment-2-phunghx'
+[2023-07-13 08:43:42Z INFO CommandSettings] Remove url from Arg dictionary.
+[2023-07-13 08:43:42Z INFO CommandSettings] Arg 'token': '***'
+[2023-07-13 08:43:42Z INFO CommandSettings] Remove token from Arg dictionary.
+[2023-07-13 08:43:44Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration' (66CC:6C7C:2267880:2388BDC:64AFB93F)
+[2023-07-13 08:43:44Z INFO ConfigurationManager] Using V2 flow: False
+[2023-07-13 08:43:44Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2023-07-13 08:43:44Z INFO RunnerServer] EstablishVssConnection
+[2023-07-13 08:43:44Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-07-13 08:43:44Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-07-13 08:43:44Z INFO RunnerServer] EstablishVssConnection
+[2023-07-13 08:43:44Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-07-13 08:43:44Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-07-13 08:43:44Z INFO RunnerServer] EstablishVssConnection
+[2023-07-13 08:43:44Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-07-13 08:43:44Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-07-13 08:43:45Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-07-13 08:43:46Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-07-13 08:43:46Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-07-13 08:43:46Z INFO Terminal] WRITE LINE: 
+[2023-07-13 08:43:46Z INFO ConfigurationManager] Test Connection complete.
+[2023-07-13 08:43:46Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:43:46Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:46Z INFO HostContext] Well known config file 'RSACredentials': '/home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams'
+[2023-07-13 08:43:46Z INFO RSAFileKeyManager] Creating new RSA key using 2048-bit key length
+[2023-07-13 08:43:46Z INFO RSAFileKeyManager] Successfully saved RSA key parameters to file /home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams
+[2023-07-13 08:43:46Z INFO RSAFileKeyManager] Which: 'chmod'
+[2023-07-13 08:43:46Z INFO RSAFileKeyManager] Location: '/usr/bin/chmod'
+[2023-07-13 08:43:46Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:43:46Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper]   Arguments: '600 /home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams'
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 61141.
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper] Process started with process id 61141, waiting for process exit.
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-13 08:43:46Z INFO ProcessInvokerWrapper] Finished process 61141 with exit code 0, and elapsed time 00:00:00.0088961.
+[2023-07-13 08:43:46Z INFO RSAFileKeyManager] Successfully set permissions for RSA key parameters file /home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams
+[2023-07-13 08:43:47Z INFO CommandSettings] Arg 'runnergroup': ''
+[2023-07-13 08:43:47Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-07-13 08:43:47Z INFO PromptManager] ReadValue
+[2023-07-13 08:43:47Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2023-07-13 08:43:47Z INFO Terminal] WRITE: [press Enter for Default] 
+[2023-07-13 08:43:47Z INFO Terminal] READ LINE
+[2023-07-13 08:43:50Z INFO Terminal] Read value: ''
+[2023-07-13 08:43:50Z INFO PromptManager] Falling back to the default: 'Default'
+[2023-07-13 08:43:50Z INFO Terminal] WRITE LINE: 
+[2023-07-13 08:43:50Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2023-07-13 08:43:50Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-07-13 08:43:50Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2023-07-13 08:43:50Z INFO CommandSettings] Arg 'name': ''
+[2023-07-13 08:43:50Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-07-13 08:43:50Z INFO PromptManager] ReadValue
+[2023-07-13 08:43:50Z INFO Terminal] WRITE: Enter the name of runner: 
+[2023-07-13 08:43:50Z INFO Terminal] WRITE: [press Enter for phunghx] 
+[2023-07-13 08:43:50Z INFO Terminal] READ LINE
+[2023-07-13 08:43:51Z INFO Terminal] Read value: ''
+[2023-07-13 08:43:51Z INFO PromptManager] Falling back to the default: 'phunghx'
+[2023-07-13 08:43:51Z INFO Terminal] WRITE LINE: 
+[2023-07-13 08:43:51Z INFO CommandSettings] Arg 'labels': ''
+[2023-07-13 08:43:51Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-07-13 08:43:51Z INFO PromptManager] ReadValue
+[2023-07-13 08:43:51Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Linux', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2023-07-13 08:43:51Z INFO Terminal] WRITE: [press Enter to skip] 
+[2023-07-13 08:43:51Z INFO Terminal] READ LINE
+[2023-07-13 08:43:55Z INFO Terminal] Read value: ''
+[2023-07-13 08:43:55Z INFO Terminal] WRITE LINE: 
+[2023-07-13 08:43:55Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-07-13 08:43:55Z INFO CommandSettings] Flag 'no-default-labels': 'False'
+[2023-07-13 08:43:55Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-07-13 08:43:55Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2023-07-13 08:43:55Z INFO ConfigurationStore] Saving OAuth credential @ /home/phunghx2/linux-course/course1/actions-runner/.credentials
+[2023-07-13 08:43:55Z INFO ConfigurationStore] Credentials Saved.
+[2023-07-13 08:43:55Z INFO ConfigurationStore] HasCredentials()
+[2023-07-13 08:43:55Z INFO ConfigurationStore] stored True
+[2023-07-13 08:43:55Z INFO CredentialManager] GetCredentialProvider
+[2023-07-13 08:43:55Z INFO CredentialManager] Creating type OAuth
+[2023-07-13 08:43:55Z INFO CredentialManager] Creating credential type: OAuth
+[2023-07-13 08:43:55Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams
+[2023-07-13 08:43:55Z INFO RunnerServer] EstablishVssConnection
+[2023-07-13 08:43:55Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-07-13 08:43:55Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-07-13 08:43:55Z INFO RunnerServer] EstablishVssConnection
+[2023-07-13 08:43:55Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-07-13 08:43:55Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-07-13 08:43:55Z INFO RunnerServer] EstablishVssConnection
+[2023-07-13 08:43:55Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-07-13 08:43:55Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-07-13 08:43:56Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-07-13 08:43:56Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-07-13 08:43:57Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-07-13 08:43:57Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams
+[2023-07-13 08:43:57Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/phunghx2/linux-course/course1/actions-runner/.credentials_rsaparams
+[2023-07-13 08:43:58Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-07-13 08:43:59Z INFO CommandSettings] Arg 'work': ''
+[2023-07-13 08:43:59Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-07-13 08:43:59Z INFO PromptManager] ReadValue
+[2023-07-13 08:43:59Z INFO Terminal] WRITE: Enter name of work folder: 
+[2023-07-13 08:43:59Z INFO Terminal] WRITE: [press Enter for _work] 
+[2023-07-13 08:43:59Z INFO Terminal] READ LINE
+[2023-07-13 08:44:00Z INFO Terminal] Read value: ''
+[2023-07-13 08:44:00Z INFO PromptManager] Falling back to the default: '_work'
+[2023-07-13 08:44:00Z INFO ConfigurationStore] Saving runner settings.
+[2023-07-13 08:44:00Z INFO ConfigurationStore] Settings Saved.
+[2023-07-13 08:44:00Z INFO Terminal] WRITE LINE: 
+[2023-07-13 08:44:00Z INFO Terminal] WRITE LINE: 
+[2023-07-13 08:44:00Z INFO SystemDControlManager] Service name 'actions.runner.cu-ecen-aeld-assignment-2-phunghx.phunghx.service' display name 'GitHub Actions Runner (cu-ecen-aeld-assignment-2-phunghx.phunghx)' will be used for service configuration.
+[2023-07-13 08:44:00Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:44:00Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:44:00Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:44:00Z INFO HostContext] Well known directory 'Bin': '/home/phunghx2/linux-course/course1/actions-runner/bin'
+[2023-07-13 08:44:00Z INFO HostContext] Well known directory 'Root': '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:44:00Z INFO UnixUtil] Which: 'chmod'
+[2023-07-13 08:44:00Z INFO UnixUtil] Location: '/usr/bin/chmod'
+[2023-07-13 08:44:00Z INFO UnixUtil] Running /usr/bin/chmod 755 "/home/phunghx2/linux-course/course1/actions-runner/svc.sh"
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper] Starting process:
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper]   Arguments: '755 "/home/phunghx2/linux-course/course1/actions-runner/svc.sh"'
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper]   Working directory: '/home/phunghx2/linux-course/course1/actions-runner'
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 61163.
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper] Process started with process id 61163, waiting for process exit.
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-07-13 08:44:00Z INFO ProcessInvokerWrapper] Finished process 61163 with exit code 0, and elapsed time 00:00:00.0008329.
+[2023-07-13 08:44:00Z INFO Listener] Runner execution has finished with return code 0
