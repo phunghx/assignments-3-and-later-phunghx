@@ -120,4 +120,3 @@ gzip -f initramfs.cpio
 
 # TODO: Chown the root directory
 
-# TODO: Create initramfs.cpio.gz
