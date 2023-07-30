@@ -59,6 +59,8 @@ bool start_thread_obtaining_mutex(pthread_t *thread, pthread_mutex_t *mutex,int 
     struct thread_data* data=malloc(sizeof(struct thread_data));
     data->wait_to_obtain_ms = wait_to_obtain_ms;
     data->wait_to_release_ms = wait_to_release_ms;
+
+    
     data->thread_complete_success = false;
     data->mutex = mutex;
     
