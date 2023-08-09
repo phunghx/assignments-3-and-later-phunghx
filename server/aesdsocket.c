@@ -46,6 +46,7 @@ int runsocket()  {
     
     struct sigaction new_action;
     bool success = true;
+    FILE *fd;
     memset(&new_action,0,sizeof(struct sigaction));
     new_action.sa_handler=signal_handler;
     if( sigaction(SIGTERM, &new_action, NULL) != 0 ) {
@@ -101,7 +102,7 @@ int runsocket()  {
         //recieve data
         
         
-        FILE *fd = fopen("/var/tmp/aesdsocketdata","a");
+        fd = fopen("/var/tmp/aesdsocketdata","a");
         int n;
         while ( (n = read(new_socket, buffer, sizeof(buffer)-1)) > 0)
         {
@@ -138,6 +139,7 @@ int runsocket()  {
     //        printf("\nCaught SIGTERM!\n");
     //}
     remove("/var/tmp/aesdsocketdata");
+    fclose(fd);
     
     closelog();
     return 0;
