@@ -34,8 +34,8 @@ static void signal_handler ( int signal_number )
     errno = errno_saved;
 }
 
-int main()  {
-    int valread;
+int runsocket()  {
+    
     struct sockaddr_in address;
     int opt = 1;
     int addrlen = sizeof(address);
@@ -43,6 +43,7 @@ int main()  {
     char * line = NULL;
     size_t len = 0;
     ssize_t readbyte;
+    
     struct sigaction new_action;
     bool success = true;
     memset(&new_action,0,sizeof(struct sigaction));
@@ -100,11 +101,12 @@ int main()  {
         //recieve data
         
         
-        FILE *fd = fopen("/var/tmp/aesdsocketdata","w");
+        FILE *fd = fopen("/var/tmp/aesdsocketdata","a");
         int n;
         while ( (n = read(new_socket, buffer, sizeof(buffer)-1)) > 0)
         {
             buffer[n] = 0;
+            
             for(int i=0;i<n;i++)   {
                 if (buffer[i] == '\n')    {
                     fclose(fd);
@@ -125,9 +127,9 @@ int main()  {
         
         
         close(new_socket);
-        syslog(LOG_INFO, "Closed connection from %s", inet_ntoa(address.sin_addr));
-        remove("/var/tmp/aesdsocketdata");
         shutdown(server_fd, SHUT_RDWR);
+        syslog(LOG_INFO, "Closed connection from %s", inet_ntoa(address.sin_addr));
+        
     }
     //if( caught_sigint || caught_sigterm) {
     //        printf("\nCaught SIGINT!\n");
@@ -135,6 +137,39 @@ int main()  {
     //if( caught_sigterm ) {
     //        printf("\nCaught SIGTERM!\n");
     //}
+    remove("/var/tmp/aesdsocketdata");
+    
     closelog();
     return 0;
+}
+int main(int argc, char* argv[])
+{
+    pid_t process_id = 0;
+    pid_t sid = 0;
+    if (argc <=1)  {
+        runsocket();
+        return 1;
+    }
+    // Create child process
+    process_id = fork();
+    if (process_id < 0)
+    {
+    printf("fork failed!\n");
+    // Return failure in exit status
+        exit(1);
+    }
+    if (process_id > 0)
+    {
+        printf("process_id of child process %d \n", process_id);
+        exit(0);
+    }
+    //set new session
+    sid = setsid();
+    if(sid < 0)
+    {
+    // Return failure
+        exit(1);
+    }
+    runsocket();
+    return (0);
 }
