@@ -114,7 +114,7 @@ int main()  {
                     }
                     fclose(fd);
                     fd = fopen("/var/tmp/aesdsocketdata","a");
-                    send(new_socket, buffer, i, 0);
+                    send(new_socket, buffer, i+1, 0);
                     break;
                 }
             }
