@@ -541,14 +541,14 @@ int main(int argc, char *argv[])
         }
     }
 
-    void * p_ttd = memset(&ttd,0,sizeof(struct timer_thread_data));
+    memset(&ttd,0,sizeof(struct timer_thread_data));
     if ( pthread_mutex_init(&ttd.lock,NULL) != 0 ) {
         printf("Error %d (%s) initializing thread mutex!\n",errno,strerror(errno));
     } 
     else 
     {
         int clock_id = CLOCK_MONOTONIC;
-        void* p_sev = memset(&sev,0,sizeof(struct sigevent));
+        memset(&sev,0,sizeof(struct sigevent));
         /**
         * Setup a call to timer_thread passing in the ttd structure as the sigev_value
         * argument
