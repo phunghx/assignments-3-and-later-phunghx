@@ -48,7 +48,7 @@ struct slist_data_s
 };
 SLIST_HEAD(slisthead,slist_data_s) head = SLIST_HEAD_INITIALIZER(head);
 int writer_fd, sock_fd, new_sock_fd;
-sock_fd = -1;
+
 pthread_mutex_t lock;
 /* timer_thread runs every 10 seconds 
 * Assumes timer_create has configured for sigval.sival_ptr to point to the
