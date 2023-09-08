@@ -591,8 +591,8 @@ int main(int argc, char *argv[])
 
                         close(sock_fd);
                         unlink(SOCKET_DATA);
-                        free(p_sev);
-                        free(p_ttd);
+                        
+                        
                         closelog();
                         return 0;
                     }
@@ -631,8 +631,7 @@ int main(int argc, char *argv[])
                 syslog(LOG_ERR, "Failed to setup timer");
                 close(sock_fd);
                         unlink(SOCKET_DATA);
-                        free(p_sev);
-                        free(p_ttd);
+                        
                         closelog();
                         
                 exit(1);
